@@ -4,8 +4,8 @@ Ideas
 ## Concepts
 * **Exceptions**
     Talk about exceptions, and how they work and interact with code
-* **SQL Queries**
-    Explain how database queries work, and the fundimentals of prepared statements
+* **Javascript Closures**
+    Talk about closures and how they can be used & abused...
 * **Bitwise Logic**
     Explain how bitwise logic works, and the different types of operations that can be performed
 * **Boolean Logic**
@@ -21,4 +21,5 @@ Ideas
     Explain the basic modern encryption methods and how it evolved
 * ~~**References**~~
     Talk about variables in PHP, and the details of how references work
-   
+* ~~**SQL Queries**~~
+    Explain how database queries work, and the fundimentals of prepared statements
