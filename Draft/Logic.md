@@ -28,7 +28,7 @@ It's a UNARY operator, which means that it only operates
 on one value at a time.
 
 All the NOT operator does, is switch TRUE to FALSE
-and vise versa. It inverts the value.
+and vice versa. It inverts the value.
 So far, so good.
 
 The next important logical operator is the "AND" operator.
@@ -42,7 +42,7 @@ Next comes the "OR" operator, another binary operator.
 It is True when any one of the inputs is true.
 It is only False, when BOTH of the inputs are false.
 
-The final operator is the Exclusive OR operator.
+The final operator is the exclusive OR operator.
 It is True only when the inputs are different.
 Therefore, it is only True when exactly one of the values is true.
 
@@ -87,7 +87,7 @@ prevents the execution of B if A is true.
 Now, there's one more thing that I want to show you
 called De Morgan's Laws.
 
-Basically, De Morgan's Laws are a set of logical equivilencies
+Basically, De Morgan's Laws are a set of logical equivalences
 that are very useful when handling negation.
 
 The rules are:
