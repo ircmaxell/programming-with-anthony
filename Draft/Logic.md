@@ -81,7 +81,7 @@ It also means that TRUE OR B will never evaluate B.
 So now, when we look back, we can see that B
 will only be evaluated if A is True.
 
-Therefore, reducing `(A AND B) OR A` to it's logical eqivilant `A`
+Therefore, reducing `(A AND B) OR A` to its logical equivalent `A`
 prevents the execution of B if A is true.
 
 Now, there's one more thing that I want to show you
