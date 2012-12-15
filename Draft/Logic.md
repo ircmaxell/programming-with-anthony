@@ -29,6 +29,7 @@ on one value at a time.
 
 All the NOT operator does, is switch TRUE to FALSE
 and vice versa. It inverts the value.
+
 So far, so good.
 
 The next important logical operator is the "AND" operator.
@@ -50,8 +51,42 @@ Now that we have our basic operators,
 We can start to do some really interesting things.
 
 Let's try combining two operators to create a composite.
-`(A AND B) OR A`
+`A AND B OR A`
 
+To understand what this means, we need to look at how PHP
+will group the operators.
+
+To see that, we need to list the operators 
+in order of decreasing precedence:
+
+    !
+    &&
+    ||
+    AND
+    XOR
+    OR
+
+For example, in :
+
+    A AND B OR A
+
+AND has the highest precidence. So 
+becomes `(A AND B) OR A`.
+
+Likewise, `A OR B AND A` becomes `A OR (B AND A)`.
+
+The NOT operator has the highest Precidence,
+which means any time we see it, it applies to whatever 
+is imediately on its right.
+
+    !!A AND B
+
+becomes
+
+    (!(!A)) AND B
+
+Now, let's look at: `(A AND B) OR A`
+    
 To see how this will result, let's create a truth table
 and populate step by step.
 
