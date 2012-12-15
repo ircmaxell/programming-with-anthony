@@ -39,7 +39,7 @@ When both values are true, the AND of them is also true.
 In all other cases, the AND is false.
 
 Next comes the "OR" operator, another binary operator.
-It is True when any one of the inputs is true.
+It is True when any one of the inputs are true.
 It is only False, when BOTH of the inputs are false.
 
 The final operator is the exclusive OR operator.
