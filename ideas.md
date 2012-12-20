@@ -8,9 +8,6 @@ Ideas
     Talk about closures and how they can be used & abused...
 * **Bitwise Logic**
     Explain how bitwise logic works, and the different types of operations that can be performed
-* **Boolean Logic**
-    Explain the different rules of logic and how short-circuit evaulation works
-
 
 
 ## Completed
@@ -23,3 +20,6 @@ Ideas
     Talk about variables in PHP, and the details of how references work
 * ~~**SQL Queries**~~
     Explain how database queries work, and the fundimentals of prepared statements
+* ~~**Boolean Logic**~~
+    Explain the different rules of logic and how short-circuit evaulation works
+
