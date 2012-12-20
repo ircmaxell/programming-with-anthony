@@ -10,7 +10,8 @@ Ideas
     Explain how bitwise logic works, and the different types of operations that can be performed
 * **Boolean Logic**
     Explain the different rules of logic and how short-circuit evaulation works
-
+* **Design Patterns and Practical Examples**
+    Explain What Design Patterns There are and when and how to utilize them effectively
 
 
 ## Completed
