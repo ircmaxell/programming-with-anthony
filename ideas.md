@@ -8,6 +8,8 @@ Ideas
     Talk about closures and how they can be used & abused...
 * **Bitwise Logic**
     Explain how bitwise logic works, and the different types of operations that can be performed
+* **Design Patterns and Practical Examples**
+    Explain What Design Patterns There are and when and how to utilize them effectively
 
 
 ## Completed
