@@ -12,6 +12,10 @@ Ideas
     Explain What Design Patterns There are and when and how to utilize them effectively
 * **SQL Transactions and Locks**
     Explain how transactions work in SQL, and how that applies to locking
+* **Explain APC and Opcodes**
+    Explain how Opcodes work, and how caches can be used for performance
+* **Explain Parsing**
+    Explain how parsing is done, including Tokenizing, Lexing and Parsing
 * **Big `O()` Notation**
     Explain how Big O notation works, and its implication on algorithm design
 
