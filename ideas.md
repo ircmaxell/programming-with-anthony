@@ -10,6 +10,8 @@ Ideas
     Explain how bitwise logic works, and the different types of operations that can be performed
 * **Design Patterns and Practical Examples**
     Explain What Design Patterns There are and when and how to utilize them effectively
+* **SQL Transactions and Locks**
+    Explain how transactions work in SQL, and how that applies to locking
 * **Big `O()` Notation**
     Explain how Big O notation works, and its implication on algorithm design
 
