@@ -8,7 +8,12 @@ That's right, all functions in JavaScript are closures.
 
 But what are closures?
 
-To understand what a closure is, 
+To put it simply, a closure "closes" around the scope of its parents.
+
+That means that the closure's scope automatically contains 
+everything from its parents.
+
+To understand what that means,
 We first need to talk about variable scope.
 
 Let's look at a different language first: PHP.
@@ -44,7 +49,7 @@ The closure's scope will be nested inside the function's scope.
 That means that variable access traverses up the chain of scopes
 until it finds the scope the variable was defined in.
 
-This means that all functions which are defined inside of another function's scope
+Therefore, all functions which are defined inside of another function's scope
 are always closures. 
 Even if they are named functions!
 
