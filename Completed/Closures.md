@@ -1,7 +1,7 @@
 Closures
 ========
 
-The first interesting thing about closures in JavaScript
+The interesting thing about closures in JavaScript
 Is that they are no different from normal functions.
 
 That's right, all functions in JavaScript are closures.
@@ -54,8 +54,14 @@ are always closures.
 Even if they are named functions!
 
 And considering that the root scope is the global scope,
-All functions are nested inside the global scope.
+All functions are nested inside of the global scope.
 
 Therefore, all functions in JavaScript are automatically closures!
 
+To close out, let's look at a piece of code, and track the variables through it.
 
+The interesting thing here, is that we need to declare a variable with the var keyword
+in order for it to be defined in the current function's scope.
+
+Otherwise, when we access a variable from a parent's scope,
+We're accessing the parent's variable...
