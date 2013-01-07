@@ -57,9 +57,12 @@ And figure out a way to get them to the line instantiating them.
 Luckily for us there is a solution.
 Enter the Dependency Injection Container.
 
-At the root, the container is nothing more than a map of the dependencies that your classes need.
+At the root, the container is nothing more than a map of the dependencies that your classes need,
+With the logic needed to create them if they haven't been created yet.
 
-So every time you ask for a `DatabaseInterface`, the map tells it which dependency to use.
+So every time you ask for a `DatabaseInterface`, the map tells it which dependency to use,
+Then the container can check to see if it has one created already, and if it has, use that one.
+Otherwise, it'll create the database instance, store it, and then provide it to your class.
 
 So instead of constructing your class yourself, you ask the container for a new instance.
 It will then resolve the dependencies, construct the object and return it to you.
