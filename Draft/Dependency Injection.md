@@ -37,9 +37,9 @@ The most flexible way to do it would be to take the door from a supplier.
 And that's exactly what dependency injection does.
 It decouples your classes construction from the construction of its dependencies.
 
-The reason that is so important is the Dependency Inversion Principal.
+The reason that is so important is the Dependency Inversion Principle.
 
-Basically, Dependency Inversion is the principal that code should depend on abstractions.
+Basically, Dependency Inversion is the principle that code should depend on abstractions.
 By depending on abstractions, we're decoupling our implementations from each other.
 
 In PHP, that means that your code should depend on interfaces.
