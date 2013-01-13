@@ -99,3 +99,79 @@ Other than that, this class should look like nothing more than a verbose for sta
 It's worth noting that in practice we wouldn't write this class custom, but would instead use the core ArrayIterator
 Which basically does the same thing (although it does deal with non-integer keys better).
 
+So now that we have the basic iterator concept, let's talk about what we can do with it.
+
+One of the benefits of using an iterator is that you can save significant amounts of memory
+By only generating values that are needed, when they are needed.
+
+For example, let's say you want to generate a Fibonaci sequence.
+
+    class Fib implements Iterator {
+        protected $a = 0;
+        protected $b = 1;
+        protected $i = 0;
+        public function rewind() {
+            $this->a = 0;
+            $this->b = 1;
+            $this->i = 0;
+        }
+        public function next() {
+            $tmp = $this->b;
+            $this->b = $this->a + $this->b;
+            $this->a = $tmp;
+            $this->i++;
+        }
+        public function valid() {
+            return true;
+        }
+        public function key() {
+            return $this->i;
+        }
+        public function current() {
+            return $this->b;
+        }
+    }
+
+You could build an iterator for it. It would only generate one value at a time.
+And the big benefit is that it can produce an infinite number of values
+While using constant memory.
+
+Another benefit of using an iterator is that we can decorate the iterator to provide additionaly functionality
+
+For example, let's say we want to take our previous array, and iterate over only even values.
+With arrays, we would need to use array_filter and actually duplicate the array.
+But with Iterators, we can just use the core CallbackFilterIterator.
+
+    $it = new CallbackFilterIterator($it, function($value) { return $value % 2 == 0; });
+
+The cool part of this is that the original array structure is never changed or duplicated.
+The Iterator will just keep hitting the `next()` on the core iterator until it finds a value that's allowed.
+
+PHP's SPL library contains a number of these decorators that you can use to fine tune an iterator's behavior.
+
+Now, one thing that you've likely noticed is that iterators are not typically "small" pieces of code.
+Their implementation is fairly verbose.
+
+The interesting thing though, is that to make your class `Traversable` in a foreach, you can implement Iterator.
+But you can also implement IteratorAggregate.
+
+    interface IteratorAggregate extends Traversable {
+        public function getIterator();
+    }
+
+The IteratorAggregate interface allows you to instantiate a different iterator from your class.
+
+So let's say your class has an array that you want to allow iteration over. 
+Instead of building a new iterator in your class, simply implement IteratorAggregate
+
+    class MyClass implements IteratorAggregate {
+        protected $myArray = array();
+        public function getIterator() {
+            return new ArrayIterator($this->myArray);
+        }
+    }
+
+We can now use our class in foreach!
+
+Iterators are a very powerful concept that, if used correctly,
+can lead to very efficient, flexible and clean code.
