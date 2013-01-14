@@ -171,7 +171,7 @@ Instead of building a new iterator in your class, simply implement IteratorAggre
         }
     }
 
-We can now use our class in foreach!
+We can now use an instance of our class in foreach!
 
 Iterators are a very powerful concept that, if used correctly,
 can lead to very efficient, flexible and clean code.
