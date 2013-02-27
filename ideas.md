@@ -18,8 +18,6 @@ Ideas
     Explain how Big O notation works, and its implication on algorithm design
 * **Data Structures**
     An introduction into complex data structures
-* **Design Patterns**
-    Something about design patterns...
 * **Streams**
     How streams work in general and in PHP
 * **JavaScript Objects**
@@ -49,3 +47,5 @@ Ideas
     Explain the principals of DI, and how it applies to OO code
 * ~~**Iterators**~~
     Explain the principal of iterators and how to use them
+* ~~**Design Patterns**~~
+    Something about design patterns...
