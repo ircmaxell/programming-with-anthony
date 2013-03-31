@@ -28,6 +28,8 @@ Ideas
     Talk about the different SOLID principals.
 * **Zend internals**
     Talk about how PHP works at the core...
+* **WebSockets**
+    Talk about how websockets work, and why they are necessary
 
 ## Completed
 
@@ -52,6 +54,6 @@ Ideas
 
 ## Responses
 
-* [Reddit Thread on becomming a better developer](http://www.reddit.com/r/PHP/comments/1b69sg/becoming_a_better_developer_anthony_ferrara/c9448ry):
+* ~~[Reddit Thread on becomming a better developer](http://www.reddit.com/r/PHP/comments/1b69sg/becoming_a_better_developer_anthony_ferrara/c9448ry):~~
 
      > I think the biggest problem people starting out have is a lack of knowing where to begin at all. What should I learn first? What best prepares me for learning what to learn. Do I learn straight php? Should I focus on OO? Do I use a CMS? Which one? Framework? Which one?
