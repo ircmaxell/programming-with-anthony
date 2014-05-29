@@ -30,6 +30,8 @@ Ideas
     Talk about how PHP works at the core...
 * **WebSockets**
     Talk about how websockets work, and why they are necessary
+* **Business/Domain Logic**
+    There is always talk about seperation of concerns but the specifics of domain and business logic never really gets explained.
 
 ## Completed
 
